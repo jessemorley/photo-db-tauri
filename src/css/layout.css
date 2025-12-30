@@ -22,13 +22,27 @@ body.dark-mode .header {
     width: 80px;
     flex-shrink: 0;
     padding-left: 12px; /* Space for macOS traffic lights */
+    display: flex;
+    align-items: center; /* Center traffic lights vertically */
 }
 
 .header-main {
     flex: 1;
     display: flex;
+    flex-direction: column;
+}
+
+.header-drag-area {
+    height: 12px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
     align-items: center;
-    padding: 12px 20px;
+    padding: 0 20px 12px 20px;
 }
 
 .nav-controls {

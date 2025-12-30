@@ -18,23 +18,25 @@
 
     <!-- Main App Interface -->
     <div class="app-interface hidden" id="appInterface">
-        <div class="header" data-tauri-drag-region>
-            <div class="header-left"></div>
+        <div class="header">
+            <div class="header-left" data-tauri-drag-region></div>
             <div class="header-main">
-                <div class="nav-controls">
-                    <div class="nav-left">
+                <div class="header-drag-area" data-tauri-drag-region></div>
+                <div class="header-content">
+                    <div class="nav-controls" data-tauri-drag-region>
+                    <div class="nav-left" data-tauri-drag-region>
                         <button class="menu-button back-button" id="backButton">
                             <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 8.5-4-4 4-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(7 6)"/></svg>
                         </button>
                         <div class="current-path" id="currentPath"></div>
                     </div>
-                    <div class="nav-center">
+                    <div class="nav-center" data-tauri-drag-region>
                         <div class="search-container">
                             <svg class="search-icon" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5"/><path d="m17.571 17.5-5.571-5.5"/></g></svg>
                             <input type="text" class="search-bar" id="searchBar">
                         </div>
                     </div>
-                    <div class="nav-right">
+                    <div class="nav-right" data-tauri-drag-region>
                         <button class="menu-button reveal-folder-button hidden" id="revealFolderButton" title="Reveal in Finder">
                             <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 4)"><path d="m.5 1.5v9c0 1.1045695.8954305 2 2 2h10c1.1045695 0 2-.8954305 2-2v-6.00280762c.0007656-1.05436179-.8150774-1.91816512-1.8499357-1.99451426l-.1500643-.00468356-5 .00200544-2-2h-4c-.55228475 0-1 .44771525-1 1z"/><path d="m.5 2.5h7"/></g></svg>
                         </button>
@@ -51,6 +53,7 @@
                         </button>
 
                     </div>
+                </div>
                 </div>
             </div>
         </div>
