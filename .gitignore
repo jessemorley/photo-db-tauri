@@ -1,0 +1,15 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Tauri
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.swp
+*.swo
+*~

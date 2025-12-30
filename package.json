@@ -1,0 +1,20 @@
+{
+  "name": "photographer-image-browser-tauri",
+  "version": "2.0.0",
+  "description": "Tauri version of photographer image browser",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "build:universal": "tauri build --target universal-apple-darwin"
+  },
+  "keywords": ["tauri", "image", "browser", "photography"],
+  "author": "Jesse Morley",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.6"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.9.1"
+  }
+}
